@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta visual de mensalidades e vencimentos dos alunos.">
+    <title>Mensalidades | FitControl</title>
+    <link rel="icon" href="../icons/academia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="dark-page">
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="../index.html"
+                aria-label="FitControl Academia, página inicial"><img src="../imgs/Logo%20FitControl%20Academia.png"
+                    alt="FitControl Academia"></a>
+            <div class="sidebar-label">MENU PRINCIPAL</div>
+            <nav class="side-nav" aria-label="Navegação principal"><a class="nav-link" href="../index.html"><span
+                        class="nav-symbol">▦</span>Painel</a><a class="nav-link" href="matricula.html"><span
+                        class="nav-symbol">＋</span>Matrículas</a><a class="nav-link" href="treinos.html"><span
+                        class="nav-symbol">↗</span>Treinos</a><a class="nav-link" href="planos.html"><span
+                        class="nav-symbol">▤</span>Planos</a><a class="nav-link active" href="mensalidades.html"><span
+                        class="nav-symbol">◷</span>Mensalidades</a><a class="nav-link" href="acesso.html"><span
+                        class="nav-symbol">⌁</span>Controle de acesso</a></nav>
+            <div class="sidebar-bottom">
+                <div class="sidebar-label">SUA CONTA</div><a class="nav-link" href="login.html"><span
+                        class="nav-symbol">↪</span>Sair do sistema</a>
+                <div class="sidebar-user"><span class="avatar avatar-green">RC</span><span><strong>Rafael
+                            Costa</strong><small>Administrador</small></span><span class="user-menu">···</span></div>
+            </div>
+        </aside>
+        <main class="main-area">
+            <header class="topbar">
+                <div class="breadcrumb">Financeiro <span>/</span> <strong>Mensalidades</strong></div>
+                <div class="topbar-actions"><span class="today-label">TERÇA-FEIRA, 11 DE NOVEMBRO</span><span
+                        class="avatar avatar-dark">RC</span></div>
+            </header>
+            <div class="page-content">
+                <section class="page-title-row">
+                    <div>
+                        <p class="eyebrow">FINANCEIRO</p>
+                        <h1>Mensalidades</h1>
+                        <p class="muted">Acompanhe pagamentos, vencimentos e pendências.</p>
+                    </div><span class="select-like">Novembro 2026⌄</span>
+                </section>
+                <section class="billing-metrics">
+                    <article class="billing-stat"><span>Recebido no mês</span><strong>R$ 38.450,00</strong><small
+                            class="trend-up">↗ 5,7% em relação ao mês passado</small></article>
+                    <article class="billing-stat"><span>Em aberto</span><strong>R$ 4.280,00</strong><small>23
+                            mensalidades pendentes</small></article>
+                    <article class="billing-stat"><span>Próximos vencimentos</span><strong>18
+                            alunos</strong><small>Vencem nos próximos 7 dias</small></article>
+                </section>
+                <section class="panel table-panel billing-table">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Mensalidades dos alunos</h2>
+                            <p class="muted">Valores e vencimentos do período selecionado</p>
+                        </div><label class="table-search"><span>⌕</span><input type="search"
+                                placeholder="Buscar aluno"></label>
+                    </div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ALUNO</th>
+                                    <th>PLANO</th>
+                                    <th>VENCIMENTO</th>
+                                    <th>VALOR</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="person-cell"><span
+                                                class="avatar avatar-peach">AM</span><span><strong>Ana
+                                                    Martins</strong><small>FC-1024</small></span></span></td>
+                                    <td>Completo</td>
+                                    <td>10 nov, 2026</td>
+                                    <td><strong>R$ 129,90</strong></td>
+                                    <td><span class="status status-green">Pago</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="person-cell"><span
+                                                class="avatar avatar-blue">BC</span><span><strong>Beatriz
+                                                    Costa</strong><small>FC-0918</small></span></span></td>
+                                    <td>Completo</td>
+                                    <td>12 nov, 2026</td>
+                                    <td><strong>R$ 129,90</strong></td>
+                                    <td><span class="status status-pending">Pendente</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="person-cell"><span
+                                                class="avatar avatar-lilac">RL</span><span><strong>Rafael
+                                                    Lima</strong><small>FC-1130</small></span></span></td>
+                                    <td>Essencial</td>
+                                    <td>15 nov, 2026</td>
+                                    <td><strong>R$ 89,90</strong></td>
+                                    <td><span class="status status-green">Pago</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="person-cell"><span
+                                                class="avatar avatar-yellow">JM</span><span><strong>João
+                                                    Mendes</strong><small>FC-0882</small></span></span></td>
+                                    <td>Integral</td>
+                                    <td>08 nov, 2026</td>
+                                    <td><strong>R$ 169,90</strong></td>
+                                    <td><span class="status status-late">Atrasado</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-bottom"><span>Mostrando 4 de 23 mensalidades pendentes e pagas</span>
+                        <div><button class="pagination-button" type="button"
+                                aria-label="Página anterior">←</button><button class="pagination-button current-page"
+                                type="button">1</button><button class="pagination-button"
+                                type="button">2</button><button class="pagination-button" type="button"
+                                aria-label="Próxima página">→</button></div>
+                    </div>
+                </section>
+                <div class="notice-line"><span>i</span> Valores e status são fictícios. Este protótipo não realiza
+                    cobranças nem pagamentos.</div>
+                <footer class="page-footer">FitControl <span>·</span> Protótipo acadêmico com dados fictícios</footer>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário demonstrativo de matrícula de alunos.">
+    <title>Nova matrícula | FitControl</title>
+    <link rel="icon" href="../icons/academia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="dark-page">
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="../index.html"
+                aria-label="FitControl Academia, página inicial"><img src="../imgs/Logo%20FitControl%20Academia.png"
+                    alt="FitControl Academia"></a>
+            <div class="sidebar-label">MENU PRINCIPAL</div>
+            <nav class="side-nav" aria-label="Navegação principal"><a class="nav-link" href="../index.html"><span
+                        class="nav-symbol">▦</span>Painel</a><a class="nav-link active" href="matricula.html"><span
+                        class="nav-symbol">＋</span>Matrículas</a><a class="nav-link" href="treinos.html"><span
+                        class="nav-symbol">↗</span>Treinos</a><a class="nav-link" href="planos.html"><span
+                        class="nav-symbol">▤</span>Planos</a><a class="nav-link" href="mensalidades.html"><span
+                        class="nav-symbol">◷</span>Mensalidades</a><a class="nav-link" href="acesso.html"><span
+                        class="nav-symbol">⌁</span>Controle de acesso</a></nav>
+            <div class="sidebar-bottom">
+                <div class="sidebar-label">SUA CONTA</div><a class="nav-link" href="login.html"><span
+                        class="nav-symbol">↪</span>Sair do sistema</a>
+                <div class="sidebar-user"><span class="avatar avatar-green">RC</span><span><strong>Rafael
+                            Costa</strong><small>Administrador</small></span><span class="user-menu">···</span></div>
+            </div>
+        </aside>
+        <main class="main-area">
+            <header class="topbar">
+                <div class="breadcrumb">Alunos <span>/</span> <strong>Nova matrícula</strong></div>
+                <div class="topbar-actions"><span class="today-label">TERÇA-FEIRA, 11 DE NOVEMBRO</span><span
+                        class="avatar avatar-dark">RC</span></div>
+            </header>
+            <div class="page-content">
+                <section class="page-title-row">
+                    <div>
+                        <p class="eyebrow">ALUNOS</p>
+                        <h1>Nova matrícula</h1>
+                        <p class="muted">Preencha os dados para cadastrar um novo aluno.</p>
+                    </div><a class="back-link" href="../index.html">← Voltar ao painel</a>
+                </section>
+                <div class="form-layout">
+                    <form class="panel enrollment-form" action="#">
+                        <div class="form-section-title"><span class="step-number">01</span>
+                            <div>
+                                <h2>Dados pessoais</h2>
+                                <p class="muted">Informações básicas do aluno</p>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="field field-wide"><label for="nome">Nome completo <span>*</span></label><input
+                                    id="nome" name="nome" type="text" placeholder="Ex.: Ana Martins" required></div>
+                            <div class="field"><label for="nascimento">Data de nascimento <span>*</span></label><input
+                                    id="nascimento" name="nascimento" type="date" required></div>
+                            <div class="field"><label for="cpf">CPF <span>*</span></label><input id="cpf" name="cpf"
+                                    type="text" placeholder="000.000.000-00" required></div>
+                            <div class="field"><label for="email">E-mail <span>*</span></label><input id="email"
+                                    name="email" type="email" placeholder="aluno@email.com" required></div>
+                            <div class="field"><label for="telefone">Telefone <span>*</span></label><input id="telefone"
+                                    name="telefone" type="tel" placeholder="(00) 00000-0000" required></div>
+                        </div>
+                        <div class="form-section-title form-section-spaced"><span class="step-number">02</span>
+                            <div>
+                                <h2>Plano e matrícula</h2>
+                                <p class="muted">Defina as condições iniciais</p>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="field"><label for="plano">Plano escolhido <span>*</span></label><select
+                                    id="plano" name="plano" required>
+                                    <option value="">Selecione um plano</option>
+                                    <option>Essencial · R$ 89,90/mês</option>
+                                    <option>Completo · R$ 129,90/mês</option>
+                                    <option>Integral · R$ 169,90/mês</option>
+                                </select></div>
+                            <div class="field"><label for="inicio">Data de início <span>*</span></label><input
+                                    id="inicio" name="inicio" type="date" required></div>
+                            <div class="field field-wide"><label for="observacoes">Observações
+                                    <small>(opcional)</small></label><textarea id="observacoes" name="observacoes"
+                                    rows="3" placeholder="Alguma informação importante sobre o aluno..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-actions"><span class="form-note">* Campos obrigatórios · Dados fictícios para
+                                demonstração</span><button class="button button-primary" type="submit">Cadastrar aluno
+                                <span>→</span></button></div>
+                    </form>
+                    <aside class="form-aside">
+                        <div class="panel aside-note"><span class="aside-icon icon-mint">✓</span>
+                            <h2>Quase lá!</h2>
+                            <p>Após preencher os dados, a equipe poderá acompanhar o aluno pelo painel da academia.</p>
+                            <div class="aside-list"><span><b>01</b> Dados pessoais</span><span><b>02</b> Escolha do
+                                    plano</span><span><b>03</b> Confirmação</span></div>
+                        </div>
+                        <div class="privacy-note"><span>i</span>
+                            <p>Este protótipo não salva informações. Em um sistema real, os dados pessoais devem ser
+                                tratados com segurança e consentimento.</p>
+                        </div>
+                    </aside>
+                </div>
+                <footer class="page-footer">FitControl <span>·</span> Protótipo acadêmico com dados fictícios</footer>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
