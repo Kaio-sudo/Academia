@@ -5,7 +5,7 @@ projeto acadêmico da disciplina de engenharia de software sob orientação do p
 
  - HTML
  - CSS
- 
+ - Javascript
 
 # Membros da equipe
 
