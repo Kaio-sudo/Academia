@@ -14,7 +14,7 @@ Desenvolver uma aplicação web que simule um sistema de gerenciamento de academ
 
 - **HTML5** — Estruturação das páginas e dos elementos da aplicação.
 - **CSS3** — Estilização, layout e responsividade da interface.
-- **GitHub** - hospedagem do site.
+- **GitHub** — hospedagem do site.
 
 ## Equipe de Desenvolvimento
 
