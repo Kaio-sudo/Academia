@@ -1,7 +1,4 @@
-
-# Fit Control
-
-**Fit Control** é uma aplicação web desenvolvida como projeto acadêmico da disciplina de Engenharia de Software, na Faculdade SENAC, sob orientação do professor Rubens.
+é uma aplicação web desenvolvida como projeto acadêmico da disciplina de Engenharia de Software, na Faculdade SENAC, sob orientação do professor Rubens.
 
 O sistema tem como proposta oferecer um painel de controle para academias, reunindo funcionalidades que auxiliam na organização, no gerenciamento e no acompanhamento das atividades administrativas, proporcionando uma experiência mais prática e intuitiva.
 
